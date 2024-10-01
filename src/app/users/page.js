@@ -106,11 +106,7 @@ export default function Users() {
                     }`}
                     disabled={isLoading}
                 >
-                    {isLoading
-                        ? "Processing..."
-                        : editId
-                        ? "Update User"
-                        : "Add User"}
+                    {isLoading ? "Processing..." : editId ? "Update" : "Add"}
                 </button>
             </form>
 
